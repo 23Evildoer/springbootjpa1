@@ -24,7 +24,7 @@ public class Movie implements Serializable{
     @Column
     private Double  price;
     @Column(name = "action_time")
-    @DateTimeFormat(pattern = "yyyy-MM-dd") // 后端到前端
+    @DateTimeFormat(pattern = "yyyy-MM-dd HH:mm:ss") // 后端到前端
     @JsonFormat(pattern = "yyyy-MM-dd HH:mm:ss",timezone = "GMT+8") // 前端到后端
     private Date    actionTime;
 
